@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 let todos = [];
@@ -19,7 +20,7 @@ while (condition) {
             defualt: "false"
         },
     ]);
-    if (todoquestions.firstQuestion.trim() !== "") {
+    if (todoquestions.firstQuestion.trim() !== '') {
         todos.push(todoquestions.firstQuestion);
     }
     console.log(chalk.blue(todos.join(' , ')));

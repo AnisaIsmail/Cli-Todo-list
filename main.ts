@@ -25,7 +25,7 @@ let todoquestions = await  inquirer.prompt(
         },
     ]
 );
-if(todoquestions.firstQuestion.trim() !== "") {
+if(todoquestions.firstQuestion.trim() !== '') {
     todos.push(todoquestions.firstQuestion);
 }
    console.log(chalk.blue(todos.join(' , '))); 
